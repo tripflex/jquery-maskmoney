@@ -8,7 +8,7 @@
  */
 (function ($) {
     "use strict";
-    if (!$.browser) {
+    if (typeof $.browser === 'undefined') {
         $.browser = {};
         $.browser.mozilla = /mozilla/.test(navigator.userAgent.toLowerCase()) && !/webkit/.test(navigator.userAgent.toLowerCase());
         $.browser.webkit = /webkit/.test(navigator.userAgent.toLowerCase());
